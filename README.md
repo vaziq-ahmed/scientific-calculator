@@ -6,12 +6,6 @@ This project focuses on clean UI design, modular logic, safe computation handlin
 
 ---
 
-## 🚀 Live Demo
-
-> (Add your GitHub Pages link here after deployment)
-
----
-
 ## 📌 Features
 
 ### ✅ Basic Arithmetic
