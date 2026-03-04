@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- Display Section -->
+        <div class="display">
+            <div class="history" id="history"></div>
+            <div class="current-expression" id="display">0</div>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="controls">
+            <button id="toggle-deg-rad" class="btn fn-btn toggle-btn">DEG</button>
+        </div>
+
+        <!-- Keypad Grid -->
+        <div class="keypad">
+            <!-- Row 1: Memory / Clear / Delete -->
+            <button class="btn fn-btn" data-action="mc">MC</button>
+            <button class="btn fn-btn" data-action="m+">M+</button>
+            <button class="btn fn-btn" data-action="m-">M-</button>
+            <button class="btn fn-btn" data-action="mr">MR</button>
+            <button class="btn clear-btn" data-action="clear">C</button>
+            <button class="btn clear-btn" data-action="delete">DEL</button>
+
+            <!-- Row 2: Scientific Functions -->
+            <button class="btn fn-btn" data-value="sin(">sin</button>
+            <button class="btn fn-btn" data-value="cos(">cos</button>
+            <button class="btn fn-btn" data-value="tan(">tan</button>
+            <button class="btn fn-btn" data-value="log(">log</button>
+            <button class="btn fn-btn" data-value="ln(">ln</button>
+            <button class="btn op-btn" data-value="%">%</button>
+
+            <!-- Row 3: Math functions & brackets & division -->
+            <button class="btn fn-btn" data-value="√(">√</button>
+            <button class="btn fn-btn" data-action="square">x²</button>
+            <button class="btn fn-btn" data-value="^">xʸ</button>
+            <button class="btn fn-btn" data-value="(">(</button>
+            <button class="btn fn-btn" data-value=")">)</button>
+            <button class="btn op-btn" data-value="÷">÷</button>
+
+            <!-- Row 4: Constants & Numbers & multiplication -->
+            <button class="btn fn-btn" data-value="π">π</button>
+            <button class="btn fn-btn" data-value="e">e</button>
+            <button class="btn num-btn" data-value="7">7</button>
+            <button class="btn num-btn" data-value="8">8</button>
+            <button class="btn num-btn" data-value="9">9</button>
+            <button class="btn op-btn" data-value="×">×</button>
+
+            <!-- Row 5: Numbers & subtraction -->
+            <button class="btn num-btn span-2 history-btn" data-action="history">History</button>
+            <button class="btn num-btn" data-value="4">4</button>
+            <button class="btn num-btn" data-value="5">5</button>
+            <button class="btn num-btn" data-value="6">6</button>
+            <button class="btn op-btn" data-value="−">−</button>
+
+            <!-- Row 6: Numbers & addition (bottom left blocks) -->
+            <button class="btn num-btn span-2 empty-btn"></button>
+            <button class="btn num-btn" data-value="1">1</button>
+            <button class="btn num-btn" data-value="2">2</button>
+            <button class="btn num-btn" data-value="3">3</button>
+            <button class="btn op-btn" data-value="+">+</button>
+
+            <!-- Row 7: Base row with equal -->
+            <button class="btn num-btn span-2 copy-btn" data-action="copy">Copy</button>
+            <button class="btn num-btn span-2" data-value="0">0</button>
+            <button class="btn num-btn" data-value=".">.</button>
+            <button class="btn eq-btn" data-action="calculate">=</button>
+        </div>
+
+        <!-- History Panel (Hidden by default) -->
+        <div class="history-panel" id="history-panel">
+            <div class="history-header">
+                <h3>History</h3>
+                <button class="close-history" id="close-history">×</button>
+            </div>
+            <div class="history-list" id="history-list">
+            </div>
+            <button class="clear-history" id="clear-history">Clear History</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
