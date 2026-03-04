@@ -5,6 +5,10 @@ A fully functional, premium dark-themed **Scientific Calculator Web Application*
 This project focuses on clean UI design, modular logic, safe computation handling, and a responsive user experience.
 
 ---
+## Screenshot
+
+<img width="571" height="876" alt="image" src="https://github.com/user-attachments/assets/7b3d6ae6-40ab-4fce-9c97-8a0b542fae1b" />
+
 
 ## 📌 Features
 
